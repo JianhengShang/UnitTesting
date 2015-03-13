@@ -45,5 +45,19 @@ namespace MyUnitTesting.TestCase.BLL.Tools.PA
 
             Assert.AreEqual(output, result);
         }
+
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"BLL\Tools\PA\UnitTestingCalculator_AddDataResultTest.csv", "UnitTestingCalculator_AddDataResultTest#csv", DataAccessMethod.Sequential)]
+        public void UnitTestingCalculator_Add()
+        {
+            int number1 = Int32.Parse(this.testContextInstance.DataRow["number1"].ToString());
+            int number2 = Int32.Parse(this.testContextInstance.DataRow["number2"].ToString());
+            int output = Int32.Parse(this.testContextInstance.DataRow["output"].ToString());
+
+            Calculator calculator = new Calculator();
+            int result = calculator.Add(number1, number2);
+
+            Assert.AreEqual(output, result);
+        }
     }
 }

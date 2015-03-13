@@ -62,6 +62,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="TestData\BLL\Tools\PA\UnitTestingCalculator_AddDataResultTest.csv" />
     <None Include="TestData\BLL\Tools\PA\UnitTestingCalculatorDataResultTest.csv" />
   </ItemGroup>
   <Choose>

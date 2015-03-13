@@ -10,5 +10,11 @@ namespace UnitTesting.UI.Tools.PA
             Calculator calculator = new Calculator();
             return calculator.Divide(dividend, divisor);
         }
+
+        public int Add(int num1, int num2)
+        {
+            Calculator calculator = new Calculator();
+            return calculator.Add(num1, num2);
+        }
     }
 }

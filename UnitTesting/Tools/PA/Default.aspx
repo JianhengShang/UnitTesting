@@ -20,6 +20,18 @@
         结果：&nbsp; 
         <asp:Label ID="Label1" runat="server"></asp:Label>
     
+        <br />
+        <br />
+        数1:
+        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        <br />
+        数2:
+        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        <br />
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="相加计算" />
+        <br />
+        结果: <asp:Label ID="Label2" runat="server"></asp:Label>
+    
     </div>
     </form>
 </body>
